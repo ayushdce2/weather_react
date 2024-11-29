@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: titilliumFont;
+    src: url(TitilliumWeb-Regular.ttf);
+  }
+.App{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+input[type="search"]{
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+.weather_wrap{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 0.5rem;
+    min-height: max-content;
+    min-width: max-content;
+}
+.weather_wrap p{
+    color: #704040;
+    font-family: titilliumFont;
+    text-shadow: 1px 1px #ffc4c4;
+}
+
+@media only screen and (max-width:767px){
+    .weather_wrap{
+        min-height: 60%;
+        min-width: 95%;
+    }
+}
+.font_bold{
+    font-weight: bold;
+}
+.weather_data{
+    display: flex;
+    gap: 1rem;
+}
+
+.App{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
