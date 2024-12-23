@@ -63,6 +63,7 @@ useEffect(()=>{
     const Response = await API.json();
     setAllData(Response);
     // console.log(Response);
+    document.querySelector('input, search').focus();
     
 
 try{
